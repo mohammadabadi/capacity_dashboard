@@ -2,10 +2,11 @@
 
 Nuxt dashboard for classroom places. The API is raw data; used places and warnings are calculated here.
 
+Live dashboard: [capacitydashboard.vercel.app](https://capacitydashboard.vercel.app/)
+
 Requires Node 22.19 or another version supported by Nuxt, and pnpm 10.11 or newer.
 
 ```bash
-corepack enable
 pnpm install
 pnpm dev
 ```
