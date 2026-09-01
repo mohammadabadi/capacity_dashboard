@@ -1,0 +1,44 @@
+{
+  "name": "capacity-dashboard",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0",
+    "pnpm": ">=10.11.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.9.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "eslint": "^10.9.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.0.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}
